@@ -85,6 +85,7 @@
         <module>jeecg-boot-base-core</module>
         <module>jeecg-module-demo</module>
         <module>jeecg-module-system</module>
+		<module>jeecg-server-cloud</module>
     </modules>
 
 	<repositories>
@@ -517,15 +518,21 @@
                 <!--当前环境-->
                 <profile.name>dev</profile.name>
                 <!--Nacos服务地址-->
-                <config.server-addr>jeecg-boot-nacos:8848</config.server-addr>
+                <config.server-addr>127.0.0.1:8848</config.server-addr>
 				<!--Nacos配置中心命名空间,用于支持多环境.这里必须使用ID，不能使用名称,默认为空-->
-				<config.namespace></config.namespace>
+				<config.namespace>4a815737-20c4-4cf6-8f05-f9a86ee215e0</config.namespace>
 				<!--Nacos配置分组名称-->
 				<config.group>DEFAULT_GROUP</config.group>
 				<!--Nacos用户名-->
-				<config.username></config.username>
+				<config.username>nacos</config.username>
 				<!--Nacos密码-->
-				<config.password></config.password>
+				<config.password>nacos</config.password>
+				<!--redis地址-->
+				<config.redis-addr>127.0.0.1</config.redis-addr>
+				<!--redis端口-->
+				<config.redis-port>6379</config.redis-port>
+				<!--redis密码-->
+				<config.redis-password></config.redis-password>
             </properties>
         </profile>
 		<!-- 测试Nacos开启鉴权、设置分组和命名空间
@@ -547,15 +554,21 @@
                 <!--当前环境-->
                 <profile.name>test</profile.name>
                 <!--Nacos服务地址-->
-                <config.server-addr>jeecg-boot-nacos:8848</config.server-addr>
+                <config.server-addr>127.0.0.1:8848</config.server-addr>
 				<!--Nacos配置中心命名空间,用于支持多环境.这里必须使用ID，不能使用名称,默认为空-->
-				<config.namespace></config.namespace>
+				<config.namespace>efc4e412-b1a1-498f-ba01-b31807649a9a</config.namespace>
 				<!--Nacos配置分组名称-->
 				<config.group>DEFAULT_GROUP</config.group>
 				<!--Nacos用户名-->
-				<config.username></config.username>
+				<config.username>nacos</config.username>
 				<!--Nacos密码-->
-				<config.password></config.password>
+				<config.password>nacos</config.password>
+				<!--redis地址-->
+				<config.redis-addr>127.0.0.1</config.redis-addr>
+				<!--redis端口-->
+				<config.redis-port>6379</config.redis-port>
+				<!--redis密码-->
+				<config.redis-password></config.redis-password>
             </properties>
         </profile>
         <!-- 生产 -->
@@ -565,15 +578,21 @@
                 <!--当前环境-->
                 <profile.name>prod</profile.name>
                 <!--Nacos服务地址-->
-                <config.server-addr>jeecg-boot-nacos:8848</config.server-addr>
+                <config.server-addr>127.0.0.1:8848</config.server-addr>
 				<!--Nacos配置中心命名空间,用于支持多环境.这里必须使用ID，不能使用名称,默认为空-->
-				<config.namespace></config.namespace>
+				<config.namespace>c487c695-acb4-4936-84d0-5e910ef7dc69</config.namespace>
 				<!--Nacos配置分组名称-->
 				<config.group>DEFAULT_GROUP</config.group>
 				<!--Nacos用户名-->
-				<config.username></config.username>
+				<config.username>nacos</config.username>
 				<!--Nacos密码-->
-				<config.password></config.password>
+				<config.password>nacos</config.password>
+				<!--redis地址-->
+				<config.redis-addr>127.0.0.1</config.redis-addr>
+				<!--redis端口-->
+				<config.redis-port>6379</config.redis-port>
+				<!--redis密码-->
+				<config.redis-password></config.redis-password>
             </properties>
         </profile>
 		<!-- SpringCloud运行环境 -->

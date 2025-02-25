@@ -2,6 +2,12 @@ server:
   port: 9999
 
 spring:
+  #redis配置
+  redis:
+    database: 0
+    host: @config.redis-addr@
+    port: @config.redis-port@
+    password: @config.redis-password@
   application:
     name: jeecg-gateway
   main:
